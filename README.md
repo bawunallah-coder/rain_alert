@@ -1,8 +1,8 @@
-# 🌧️ Rain Alert
+# Rain Alert System
 
 An automated rain alert system that checks weather forecasts and sends email notifications to recipients when rain is expected. Perfect for reminding friends and family to bring umbrellas!
 
-## 📋 Features
+# Features
 
 - **Automated Weather Monitoring**: Checks weather forecast every 3 hours via GitHub Actions
 - **Email Notifications**: Sends alerts to multiple recipients when rain is predicted
@@ -11,14 +11,14 @@ An automated rain alert system that checks weather forecasts and sends email not
 - **Flexible Location**: Easily change forecast location via environment variables
 - **CSV-Based Distribution List**: Simple email list management
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 - GitHub account with repository access
 - [OpenWeatherMap API Key](https://openweathermap.org/api) (free tier available)
 - Gmail account with [App Password enabled](https://support.google.com/accounts/answer/185833)
 - Python 3.7+ (for local testing)
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -83,7 +83,7 @@ Run the script locally:
 python main.py
 ```
 
-## 📊 How It Works
+##  How It Works
 
 1. **Scheduled Trigger**: GitHub Actions runs the workflow every 3 hours (configurable via `rain_alert.yml`)
 2. **Weather Check**: Fetches 12-hour forecast using OpenWeatherMap API
@@ -91,7 +91,7 @@ python main.py
 4. **Email Send**: If rain detected, sends alert email to all recipients in `emails.csv`
 5. **Logging**: Prints confirmation for each email sent
 
-## 📁 File Structure
+## File Structure
 
 ```
 rain_alert/
@@ -104,7 +104,7 @@ rain_alert/
 └── README.md               # This file
 ```
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 - ✅ Uses environment variables for sensitive data
 - ✅ Gmail app passwords (not account password)
@@ -112,7 +112,7 @@ rain_alert/
 - ✅ API keys stored as GitHub Secrets
 - ✅ No hardcoded credentials in code
 
-## 🔧 Configuration
+##  Configuration
 
 ### Change Forecast Interval
 
@@ -148,7 +148,7 @@ Find coordinates at [Google Maps](https://maps.google.com) or [GeoNames](https:/
 - **800**: Clear
 - **801-809**: Clouds
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -157,19 +157,22 @@ Find coordinates at [Google Maps](https://maps.google.com) or [GeoNames](https:/
 | API key error | Verify OpenWeatherMap API key is active |
 | No emails sent despite rain | Check if weather ID < 700 for your location |
 
-## 📝 License
+## License
 
-This project is open source and available under the MIT License.
+This project is open source and available.
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork, modify, and submit pull requests!
 
-## 👨‍💻 Author
+## Author
 
 [bawunallah-coder](https://github.com/bawunallah-coder)
+bawunallah@gmail.com
+09134883826
+Yusuf Bello Shiitu
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please open a GitHub issue or contact the author.
 
