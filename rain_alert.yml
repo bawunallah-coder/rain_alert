@@ -16,10 +16,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - run: pip install -r requirements.txt
 
       - run: python main.py
         env:
           EMAIL: ${{ secrets.EMAIL }}
           PASSWORD: ${{ secrets.PASSWORD }}
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          LATITUDE: ${{ secrets.LATITUDE || '12.268583' }}
+          LONGITUDE: ${{ secrets.LONGITUDE || '6.554311' }}
