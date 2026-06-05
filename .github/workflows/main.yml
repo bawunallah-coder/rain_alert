@@ -2,7 +2,8 @@ name: Rain Alert
 
 on:
   schedule:
-    - cron: "0 */3 * * *"   # every 3 hours
+    - cron: "0 8 * * *"    # 8 AM daily
+    - cron: "0 16 * * *"   # 4 PM daily
   workflow_dispatch:
 
 jobs:
